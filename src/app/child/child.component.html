@@ -1,7 +1,7 @@
 <h1>Directive example *ngfor *ngstyle</h1>
 <h1>directive</h1>
 <div *ngFor="let emp of employee">
-     <ul>
+     <ul [ngStyle]="{backgroudColor : emp.Age >= 25 ? 'Green' : 'Blue'}">
           <li>Emp id is : {{emp.id}}</li> 
           <li>Emp name is: {{emp.name}}</li>
           <li [ngStyle]="{color : emp.Age >= 25 ? 'Green' : 'Blue'}">Emp Age is : {{emp.Age}}</li>
